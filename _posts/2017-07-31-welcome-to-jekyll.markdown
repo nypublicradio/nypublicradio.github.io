@@ -1,6 +1,6 @@
 ---
-title: Welcome to Jekyll!
-date: 2017-07-31 16:43:19 Z
+title: Welcome to Jekyll test!
+date: 2017-07-31 12:43:00 -04:00
 categories:
 - jekyll
 - update
