@@ -36,5 +36,6 @@ defaults:
     type: posts
   values:
     permalink: "/blog/:title/"
+    author:
     image:
     layout: post
