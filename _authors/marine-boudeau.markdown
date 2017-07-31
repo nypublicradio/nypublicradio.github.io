@@ -5,9 +5,4 @@ position: 0
 image: "/uploads/me.jpg"
 ---
 
----
-title: Marine Boudeau
-twitter: marineboudeau
----
-
 tktktk
