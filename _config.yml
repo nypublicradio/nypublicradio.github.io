@@ -2,6 +2,9 @@
 title: NY Public Radio Digital
 timezone: America/New_York
 collections:
+  digital-team:
+    title: Digital Team
+    output: true
   posts:
     title: Posts
     output: true
@@ -14,13 +17,12 @@ defaults:
     type: posts
   values:
     permalink: "/blog/:title/"
+    image: 
     layout: post
-    author:
-    image:
-email:
+email: 
 description: Need to write something about us here
-baseurl:
-url:
+baseurl: 
+url: 
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
@@ -30,6 +32,7 @@ gems:
 exclude:
 - Gemfile
 - Gemfile.lock
+<<<<<<< HEAD
 defaults:
 - scope:
     path: ''
@@ -39,3 +42,5 @@ defaults:
     author: Digital Team
     cover_image:
     layout: post
+=======
+>>>>>>> 467c15e0eac279e8e17bf4bb8db7bc07caf97adb
