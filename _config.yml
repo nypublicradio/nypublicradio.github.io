@@ -3,7 +3,7 @@ title: NY Public Radio Digital
 timezone: America/New_York
 collections:
   digital-team:
-    title: Digital Team
+    title: Authors
     output: true
   posts:
     title: Posts
@@ -17,7 +17,8 @@ defaults:
     type: posts
   values:
     permalink: "/blog/:title/"
-    image:
+    author: Digital Team
+    cover_image:
     layout: post
 email:
 description: Need to write something about us here
