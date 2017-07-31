@@ -2,8 +2,8 @@
 title: NY Public Radio Digital
 timezone: America/New_York
 collections:
-  authors:
-    title: Authors
+  digital-team:
+    title: Digital Team
     output: true
   posts:
     title: Posts
