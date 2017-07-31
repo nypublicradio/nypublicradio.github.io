@@ -38,6 +38,12 @@ defaults:
     type: posts
   values:
     permalink: "/blog/:title/"
-    author: Digital Team
+    author: digital-team
     cover_image:
     layout: post
+- scope:
+    path: ''
+    type: authors
+  values:
+    permalink: "/people/:title/"
+    thumbnail:
