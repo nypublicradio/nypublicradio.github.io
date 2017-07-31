@@ -18,19 +18,19 @@ defaults:
   values:
     permalink: "/blog/:title/"
     author: NYPR Digital
-    cover_image: 
+    cover_image:
     layout: post
 - scope:
     path: ''
     type: authors
   values:
-    permalink: "/people/:title/"
-    thumbnail: 
+    permalink: "/authors/:title/"
+    thumbnail:
     layout: author
-email: 
+email:
 description: Need to write something about us here
-baseurl: 
-url: 
+baseurl:
+url:
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
