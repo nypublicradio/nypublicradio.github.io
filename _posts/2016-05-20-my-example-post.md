@@ -1,6 +1,6 @@
 ---
-title: My Example Post
-date: 2016-05-20 00:00:00 Z
+title: Hello
+date: 2016-05-19 20:00:00 -04:00
 layout: post
 ---
 
