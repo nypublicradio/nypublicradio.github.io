@@ -17,12 +17,13 @@ defaults:
     type: posts
   values:
     permalink: "/blog/:title/"
-    image:
+    author: Digital Team
+    cover_image: 
     layout: post
-email:
+email: 
 description: Need to write something about us here
-baseurl:
-url:
+baseurl: 
+url: 
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
@@ -32,12 +33,3 @@ gems:
 exclude:
 - Gemfile
 - Gemfile.lock
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    author: Digital Team
-    cover_image:
-    layout: post
