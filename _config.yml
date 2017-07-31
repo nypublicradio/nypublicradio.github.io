@@ -8,8 +8,17 @@ collections:
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author:
+    image:
 email:
-description: 'Need to write something about us here'
+description: Need to write something about us here
 baseurl:
 url:
 twitter_username: jekyllrb
