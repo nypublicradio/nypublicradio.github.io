@@ -4,6 +4,7 @@ date: 2017-07-31 12:43:00 -04:00
 categories:
 - jekyll
 - update
+image: "/uploads/scott-walsh-315682-e76313.jpg"
 layout: post
 ---
 
