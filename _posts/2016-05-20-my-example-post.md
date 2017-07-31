@@ -1,6 +1,7 @@
 ---
 title: Hello
 date: 2016-05-19 20:00:00 -04:00
+author: Marine Boudeau
 layout: post
 ---
 
