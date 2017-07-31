@@ -1,3 +1,14 @@
 body {
   font-family: 'Open Sans';
 }
+
+a {
+  color: $blue;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: $blue;
+    border-bottom: 2px solid $blue;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,19 @@
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > li {
+    width: 31%;
+  }
+
+  .post-link {
+    @include text--h2;
+    color: black;
+
+    &:hover {
+      color: $blue;
+      border-color: transparent;
+    }
+  }
+}
