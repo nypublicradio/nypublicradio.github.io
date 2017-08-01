@@ -1,17 +1,22 @@
 .site-header {
   border: 0;
+
+  .wrapper {
+    margin-top: 20px;
+  }
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  width: 75px;
+  height: 75px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 50px;
   background: #222;
-}
-
-.site-title {
-  background-image: url(images/NYPR_logo.svg);
-  text-indent: -091183px;
-  width: 180px;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: 0;
-}
-
-.site-nav .page-link {
-  color: white;
+  margin-right: 15px;
 }

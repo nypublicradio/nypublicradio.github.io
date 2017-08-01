@@ -3,7 +3,10 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <div class="site-branding">
+      <img src="/assets/images/NYPR_logo.svg" class="site-logo"/>
+      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </div>
 
     {% if page_paths %}
       <nav class="site-nav">
