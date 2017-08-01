@@ -13,4 +13,13 @@ layout: default
   <a class="author-twitter" href="https://twitter.com/{{ page.twitter }}" target="_blank">
     @{{ page.twitter }}
   </a>
+
+  <section>
+    {% assign name = page.title | split: " " %}
+    {% assign posts = site.posts | where: 'author', page.title %}
+    <h4 class="text--small">Posts by {{ name.first }}</h4>
+    {% for post in posts %}
+      {% include post-item.html %}
+    {% endfor %}
+  </section>
 </article>

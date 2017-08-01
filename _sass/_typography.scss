@@ -49,5 +49,23 @@
 
   &:hover {
     color: $blue;
+    border: 0;
   }
+}
+
+.text--h3 {
+  @include text--h3;
+}
+
+.text--h4 {
+  @include text--h4;
+}
+
+.text--small {
+  @include text--small;
+}
+
+a.link--black,
+a:visited.link--black {
+  @include link--black;
 }
