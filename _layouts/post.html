@@ -7,7 +7,7 @@ layout: default
   <header class="post-header">
     <div class="post-meta">
       {% assign author = site.authors | where: 'title', page.author | first %}
-      {% if author %}
+      {% if author.image %}
         <div class="post-author-thumbnail">
           <a href="{{ author.url }}">
             <img src="{{ author.image }}"/>

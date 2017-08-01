@@ -4,22 +4,35 @@ layout: default
 
 <article class="author">
 
-  <div class="author-thumbnail">
-    <img src="{{ page.image }}" />
-  </div>
+  {% if page.image %}
+    <div class="author-thumbnail">
+      <img src="{{ page.image }}" />
+    </div>
+  {% endif %}
   <h1 class="author-name">{{ page.title }}</h1>
-  <h2 class="author-title">{{ page.job_title }}</h2>
-  <div class="author-bio">{{ page.content }}</div>
-  <a class="author-twitter" href="https://twitter.com/{{ page.twitter }}" target="_blank">
-    @{{ page.twitter }}
-  </a>
 
-  <section>
-    {% assign name = page.title | split: " " %}
-    {% assign posts = site.posts | where: 'author', page.title %}
-    <h4 class="text--small">Posts by {{ name.first }}</h4>
-    {% for post in posts %}
-      {% include post-item.html %}
-    {% endfor %}
-  </section>
+  {% if page.job_title %}
+    <h2 class="author-title">{{ page.job_title }}</h2>
+  {% endif %}
+
+  {% if page.content %}
+    <div class="author-bio">{{ page.content }}</div>
+  {% endif %}
+
+  {% if page.twitter %}
+    <a class="author-twitter" href="https://twitter.com/{{ page.twitter }}" target="_blank">
+      @{{ page.twitter }}
+    </a>
+  {% endif %}
+
+  {% assign name = page.title | split: " " %}
+  {% assign posts = site.posts | where: 'author', page.title %}
+  {% if posts %}
+    <section>
+      <h4 class="text--small">Posts by {{ name.first }}</h4>
+      {% for post in posts %}
+        {% include post-item.html %}
+      {% endfor %}
+    </section>
+  {% endif %}
 </article>

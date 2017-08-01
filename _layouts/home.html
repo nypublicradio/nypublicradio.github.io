@@ -13,7 +13,7 @@ layout: default
       <li>
         <img src="{{post.image}}" />
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-
+        {% assign author = site.authors | where: 'title', page.author | first %}
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
