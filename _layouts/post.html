@@ -29,9 +29,11 @@ layout: default
           </time>
         </div>
     </div>
+    {% if page.cover_image %}
     <div class="post-cover">
-      <img src="{{ page.image }}" />
+      <img src="{{ page.cover_image }}" />
     </div>
+    {% endif %}
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
   </header>
 
