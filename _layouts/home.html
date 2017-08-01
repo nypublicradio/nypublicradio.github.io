@@ -14,7 +14,8 @@ layout: default
 
         {% if post.cover_image %}
         <a href="{{ post.url | relative_url }}">
-          <img src="{{post.cover_image}}" />
+          <div class="post-list-cover"
+               style="background-image:url({{post.cover_image}})"></div>
         </a>
         {% endif %}
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
