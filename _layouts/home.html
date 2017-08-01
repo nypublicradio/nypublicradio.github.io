@@ -12,9 +12,9 @@ layout: default
     {% for post in site.posts %}
       <li>
 
-        {% if post.image %}
+        {% if post.cover_image %}
         <a href="{{ post.url | relative_url }}">
-          <img src="{{post.image}}" />
+          <img src="{{post.cover_image}}" />
         </a>
         {% endif %}
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}

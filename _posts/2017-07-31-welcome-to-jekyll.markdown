@@ -5,7 +5,7 @@ categories:
 - jekyll
 - update
 author: Marine Boudeau
-image: "/uploads/scott-walsh-315682-e76313.jpg"
+cover_image: "/uploads/scott-walsh-315682-e76313.jpg"
 layout: post
 ---
 
