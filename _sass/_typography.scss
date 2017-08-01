@@ -43,6 +43,15 @@
   color: $gray;
 }
 
+@mixin link--black {
+  color: black;
+  border: 0;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
 .text--h1 {
   @include text--h1;
 }

@@ -5,16 +5,34 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <img src="{{ page.image }}" />
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        <a href="{{ page.author.url }}">{{ page.author }}</a>
+    <div class="post-meta">
+      {% assign author = site.authors | where: 'title', page.author | first %}
+      {% if author %}
+        <div class="post-author-thumbnail">
+          <a href="{{ author.url }}">
+            <img src="{{ author.image }}"/>
+          </a>
+        </div>
       {% endif %}
+        <div>
+          <div>
+            {% if author %}
+            <a href="{{ author.url }}">{{ author.title }}</a>
+            {% endif %}
+            {% if author.job_title %}
+            <div>{{ author.job_title }}</div>
+            {% endif %}
+          </div>
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            {{ page.date | date: date_format }}
+          </time>
+        </div>
+    </div>
+    <div class="post-cover">
+      <img src="{{ page.image }}" />
+    </div>
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
   </header>
 
   <div class="post-content" itemprop="articleBody">

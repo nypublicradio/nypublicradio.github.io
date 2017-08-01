@@ -1,0 +1,47 @@
+.post-meta {
+  display: flex;
+  align-items: center;
+  @include text--small;
+  margin-bottom: 20px;
+
+  a {
+    @include link--black;
+  }
+}
+
+.post-author-thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.post-title {
+  @include text--h1;
+}
+
+.post-cover {
+  margin-bottom: 30px;
+}
+
+.post-cover,
+.post-meta,
+.post-content > figure > pre,
+.post-content > p,
+.post-title {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-content > figure > pre {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+pre,
+code {
+  background-color: #eee;
+}
