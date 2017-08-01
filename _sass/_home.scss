@@ -5,15 +5,46 @@
 
   > li {
     width: 31%;
+
+    @media (max-width: 1000px) {
+      width: 48%;
+    }
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+  }
+
+  > li > a > img {
+    margin-bottom: 10px;
+    border: 1px solid $line;
   }
 
   .post-link {
-    @include text--h2;
+    @include text--h3;
     color: black;
 
     &:hover {
       color: $blue;
       border-color: transparent;
     }
+  }
+
+  &-meta {
+    display: flex;
+    align-items: center;
+
+    &-data {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-thumbnail {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 10px;
   }
 }

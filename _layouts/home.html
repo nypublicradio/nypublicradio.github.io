@@ -6,19 +6,37 @@ layout: default
 
   {{ content }}
 
-  <h1 class="page-heading">Latest</h1>
+  <h1 class="page-heading text--small">Latest</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <img src="{{post.image}}" />
+
+        {% if post.image %}
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{post.image}}" />
+        </a>
+        {% endif %}
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {% assign author = site.authors | where: 'title', page.author | first %}
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-        <div>{{ post.author }}</div>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <div class="post-list-meta">
+          {% assign author = site.authors | where: 'title', post.author | first %}
+          {% if author.image %}
+            <div class="post-list-thumbnail">
+              <a href="{{ author.url }}">
+                <img src="{{ author.image }}"/>
+              </a>
+            </div>
+          {% endif %}
+          <div class="post-list-meta-data">
+            <a href="{{ author.url }}" class="text--small link--black">{{ author.title }}</a>
+            <div class="text--small">{{ post.date | date: date_format }}</div>
+          </div>
+        </div>
+
       </li>
     {% endfor %}
   </ul>
