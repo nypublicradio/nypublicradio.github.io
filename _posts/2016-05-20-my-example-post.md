@@ -2,6 +2,7 @@
 title: Hello
 date: 2016-05-19 20:00:00 -04:00
 author: Marine Boudeau
+cover_image: "/uploads/andre-spieker-238.jpg"
 layout: post
 ---
 
