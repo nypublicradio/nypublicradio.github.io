@@ -17,5 +17,10 @@
 
   &-name {
     @include text--h1;
+    margin-bottom: 0;
+  }
+
+  &-title {
+    @include text--h4;
   }
 }

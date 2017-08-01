@@ -51,31 +51,3 @@
     color: $blue;
   }
 }
-
-.text--h1 {
-  @include text--h1;
-}
-
-.text--h2 {
-  @include text--h2;
-}
-
-.text--h3 {
-  @include text--h3;
-}
-
-.text--h4 {
-  @include text--h4;
-}
-
-.text--body {
-  @include text--body;
-}
-
-.text--summary {
-  @include text--summary;
-}
-
-.text--small {
-  @include text--small;
-}
