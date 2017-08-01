@@ -2,9 +2,11 @@ body {
   font-family: 'Open Sans';
 }
 
-a {
+a,
+a:visited {
   color: $blue;
   border-bottom: 2px solid transparent;
+  transition: .2s;
 
   &:hover {
     color: $blue;

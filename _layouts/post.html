@@ -12,9 +12,8 @@ layout: default
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         {{ page.date | date: date_format }}
       </time>
-      {% assign author = site.authors | where: 'title', post.author | first %}
-      {% if author %}
-        <a href="{{ author.url }}">{{ author.title }}</a>
+      {% if page.author %}
+        <a href="{{ page.author.url }}">{{ page.author }}</a>
       {% endif %}
   </header>
 

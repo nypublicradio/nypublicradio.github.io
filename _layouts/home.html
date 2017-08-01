@@ -17,9 +17,7 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-        <div>{{ post.author.image }} {{ post.author }}</div>
-        <div>{{ post.author.url }}</div>
-        <div>{{ author.url }}</div>
+        <div>{{ post.author }}</div>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
       </li>
     {% endfor %}
