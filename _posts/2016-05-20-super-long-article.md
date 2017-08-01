@@ -5,6 +5,7 @@ date: 2016-05-19 20:00:00 -04:00
 categories:
 - misc
 author: Fiona Carswell
+cover_image: "/uploads/irene-davila-45780.jpg"
 layout: post
 ---
 
