@@ -4,7 +4,12 @@ layout: default
 
 <article class="author">
 
-  <img src="{{ page.image }}" />
-  <h1 class="name">{{ page.title }}</h1>
-  <div class="bio">{{ page.content }}</div>
+  <div class="author-thumbnail">
+    <img src="{{ page.image }}" />
+  </div>
+  <h1 class="author-name">{{ page.title }}</h1>
+  <div class="author-bio">{{ page.content }}</div>
+  <a class="author-twitter" href="https://twitter.com/{{ page.twitter }}" target="_blank">
+    @{{ page.twitter }}
+  </a>
 </article>

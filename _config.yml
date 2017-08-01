@@ -1,5 +1,5 @@
 ---
-title: NY Public Radio Digital
+title: Digital at New York Public Radio
 timezone: America/New_York
 collections:
   authors:
@@ -18,21 +18,21 @@ defaults:
   values:
     permalink: "/blog/:title/"
     author: NYPR Digital
-    cover_image: 
+    cover_image:
     layout: post
 - scope:
     path: ''
     type: authors
   values:
     permalink: "/authors/:title/"
-    image: 
-    job_title: 
-    twitter: 
+    image:
+    job_title:
+    twitter:
     layout: author
-email: 
-description: Need to write something about us here
-baseurl: 
-url: 
+email:
+description:
+baseurl:
+url:
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
